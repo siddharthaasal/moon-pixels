@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="dropdown">
+        <button onclick="myFunction()" class="dropbtn">Moon</button>
+        <div id="myDropdown" class="dropdown-content">
+          <a
+            href="./images/144p.webp"
+            onclick="displayImage(event, './images/144p.webp')"
+            >144p</a
+          >
+          <a
+            href="./images/240p.jpg"
+            onclick="displayImage(event, './images/240p.jpg')"
+            >240p</a
+          >
+          <a
+            href="./images/360p.jpg"
+            onclick="displayImage(event, './images/360p.jpg')"
+            >360p</a
+          >
+          <a
+            href="./images/720p.jpg"
+            onclick="displayImage(event, './images/720p.jpg')"
+            >720p</a
+          >
+          <a
+            href="./images/1080p.jpg"
+            onclick="displayImage(event, './images/1080p.jpg')"
+            >1080p</a
+          >
+        </div>
+      </div>
+      <img
+        id="displayedImage"
+        src=""
+        alt="Selected Image"
+        style="display: none; margin-top: 20px"
+      />
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
